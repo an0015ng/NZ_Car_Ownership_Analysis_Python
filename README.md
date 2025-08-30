@@ -30,7 +30,9 @@ This project helps understanding how car preferences and market trends have evol
 
 Here's what the raw dataset `Car_Data.csv` looks like when I first loaded it:
 
-<img width="1151" height="458" alt="image" src="https://github.com/user-attachments/assets/5d308ba3-d4c7-409f-b74d-f237f242b71a" />
+<p align="center">
+  <img width="872" height="254" alt="image" src="https://github.com/user-attachments/assets/cb14d954-886e-40f1-a93c-e1d91ef2a8aa" />
+</p>
 
 **Key Statistics**: 300,000 records × 16 columns | Age range: 18-71 years | Purchase timeline: 1970-2023 (53 years) | International vehicle origins from 8+ countries
 
