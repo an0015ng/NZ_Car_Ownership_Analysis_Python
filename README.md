@@ -59,6 +59,7 @@ I started by checking if there were any missing values across all columns in the
 #Check for missing values & percentages
 missing_count = df.isnull().sum()
 print("\nMissing Values Percentage:")
+
 missing_percentage = (missing_count / len(df)) * 100
 missing_summary = pd.DataFrame({
 'Missing_Count': missing_count,
@@ -134,6 +135,91 @@ Below is the output:
 **Why These Features Matter**: Age is crucial for demographic analysis, while years_since_purchase helps understand car ownership patterns and replacement cycles. These calculated fields will be essential for the market analysis in Phase 3.
 
 At this point, I had a clean, well-structured dataset with proper data types and useful calculated fields, ready for exploratory analysis.
+
+# Phase 2: Exploratory Data Analysis
+
+Now that I have clean, reliable data, it's time to dig deeper and understand what the data is actually telling us. This phase is about exploring patterns, relationships, and getting a feel for the characteristics of New Zealand's car market over the past 50+ years.
+
+## 2.1. Demographic Analysis & Market Segmentation
+
+**Understanding the Basics**: Before diving into complex market trends, I need to understand the fundamental characteristics of the dataset - who's buying cars, what types of cars they're buying, and how the market is distributed.
+
+I set up a systematic approach to analyze all the categorical variables in the dataset. Since some variables have just a few categories (like Gender) while others have hundreds (like Car Model), I needed different visualization strategies:
+
+```python
+sns.set_style("whitegrid")
+
+#Analyze categorical variables
+categorical_columns = ['Gender', 'Car_status', 'Car_Make', 'Car_Model',
+'Vehicle_type', 'Vehicle_shape', 'Country_of_origin']
+
+for col in categorical_columns:
+if col in df_clean.columns:
+try:
+# Print the header
+print(f"\n{col.upper()} - Value Counts:")
+
+# Perform calculations
+value_counts = df_clean[col].value_counts()
+percentages = df_clean[col].value_counts(normalize=True) * 100
+unique_count = df_clean[col].nunique()
+
+# Modify summary based on number of unique values
+if unique_count <= 5:
+    # Show all categories for small number of unique values
+    summary = pd.DataFrame({
+        'Count': value_counts,
+        'Percentage': percentages.round(2)
+    })
+    print(summary.head(10))
+else:
+    # Show top 9 + Others for large number of unique values
+    # [Additional code for handling many categories...]
+```
+
+**Smart Visualization Strategy**: The code automatically chooses the best chart type:
+- **Pie charts** for variables with 5 or fewer categories (like Gender, Car Status)
+- **Horizontal bar charts** with "Top 9 + Others" for variables with many categories (like Car Make, Car Model)
+
+This prevents charts from becoming cluttered and unreadable while still showing the most important patterns.
+
+### Key Demographic Findings
+
+**Gender Distribution**:
+
+<p align="center">
+  <img width="330" height="358" alt="image" src="https://github.com/user-attachments/assets/ecbefb42-c7c1-45ab-a3c4-6207eff9b1d1" />
+</p>
+
+The gender split is remarkably balanced - 50.9% male and 49.1% female car owners. This near-perfect 50/50 split suggests that car ownership in New Zealand isn't significantly skewed by gender, which is interesting for market segmentation purposes. Both men and women are equally represented in the car-buying market.
+
+**Car Status Analysis**:
+
+<p align="center">
+  <img width="274" height="316" alt="image" src="https://github.com/user-attachments/assets/dd8fcbf4-aaf3-48bb-ac93-9f98a6f87053" />
+</p>
+
+This 70/30 split between old and new cars has major implications for automotive businesses - it shows the used car market is much larger than the new car market.
+
+### Market Landscape & Brand Competition
+
+**Car Make Analysis**: 
+
+<p align="center">
+<img width="379" height="383" alt="image" src="https://github.com/user-attachments/assets/0b6f4ce0-7c66-419d-809d-87cbe5cf1882" />
+</p>
+This reveals a fascinating competitive landscape in New Zealand's automotive market. The top three brands are remarkably close: Ford leads with 9.87% market share, followed closely by Toyota (9.55%) and Mitsubishi (9.05%). This tight competition among the leaders suggests a healthy, competitive market without extreme dominance by any single brand.
+
+**What's Really Interesting**: The "Others" category accounts for 44.13% of the market, which means the car market is incredibly diverse - there are 245 different car makes in the dataset! This suggests New Zealanders have access to a wide variety of international brands, not just the major global players.
+
+
+
+
+
+
+
+
+
 
 
 
