@@ -270,6 +270,155 @@ This is where the analysis gets really interesting from a global trade perspecti
 
 New Zealand's own automotive production accounts for only 3.33% of the market, suggesting the country relies heavily on imports rather than domestic manufacturing.
 
+# Phase 3: Market Dominance Analysis
+
+With a solid understanding of the current market landscape established in Phase 2, I moved into the most revealing component: **temporal market dynamics**. This phase examines how New Zealand's automotive market has evolved over 53 years (1970-2023), tracking the rise and fall of global automotive powers and identifying critical disruption points that reshaped the competitive landscape.
+
+## 3.1. Temporal Market Share Analysis
+
+I created a comprehensive yearly dataset that tracks market share percentages for all countries across the 53-year period, then built a pivot table to analyze key milestone years:
+
+```python
+# Create yearly market share data and pivot table for analysis
+yearly_df = pd.DataFrame(yearly_data)
+market_share_pivot = yearly_df.pivot(index='Year', columns='Country', values='Market_Share').fillna(0)
+
+print("Market Share by Year (%) - Sample years:")
+sample_years = [1970][1980][1990][2000][2010][2020][2023]
+available_years = [year for year in sample_years if year in market_share_pivot.index]
+print(market_share_pivot.loc[available_years].round(1))
+```
+
+<p align="center">
+  <img width="1072" height="822" alt="image" src="https://github.com/user-attachments/assets/f37d8e26-533a-4b35-ad09-6168d2d6944f" />
+</p>
+
+The pivot table revealed Japan's complete market cycle: from 3.2% (1970s) to peak dominance of 69.3% (1990s), then gradual decline to 38.5% (2023). Meanwhile, Germany showed consistent growth from 6.0% to 16.2%, establishing itself as the primary challenger.
+
+## 3.2. Multi-Dimensional Visualization Strategy
+
+### Line Chart Evolution (1970-2023)
+
+I created a comprehensive line chart that tracks individual country trajectories over the complete time series:
+
+```python
+plt.figure(figsize=(14, 8))
+for i, country in enumerate(top_countries):
+country_data = yearly_df[yearly_df['Country'] == country]
+plt.plot(country_data['Year'], country_data['Market_Share'],
+marker='o', linewidth=2.5, markersize=4,
+label=country.title(), color=colors[i % len(colors)])
+
+plt.title('Automotive Market Share Evolution by Country of Origin (1970-2023)', fontsize=16, fontweight='bold')
+plt.xlabel('Year', fontsize=12)
+plt.ylabel('Market Share (%)', fontsize=12)
+plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
+plt.grid(True, alpha=0.3)
+plt.tight_layout()
+plt.show()
+```
+
+<p align="center">
+  <img width="1133" height="622" alt="image" src="https://github.com/user-attachments/assets/288b974f-b1fd-41e9-b67d-59233fbe7165" />
+</p>
+
+### Stacked Area Chart (Cumulative Market View)
+
+```python
+plt.figure(figsize=(14, 8))
+stacked_data = market_share_pivot[top_countries].fillna(0)
+years = stacked_data.index
+
+plt.stackplot(years, *[stacked_data[country] for country in top_countries],
+labels=[country.title() for country in top_countries],
+colors=colors[:len(top_countries)], alpha=0.8)
+
+plt.title('Market Dominance Evolution - Stacked View', fontsize=16, fontweight='bold')
+plt.xlabel('Year', fontsize=12)
+plt.ylabel('Cumulative Market Share (%)', fontsize=12)
+plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
+plt.grid(True, alpha=0.3)
+plt.tight_layout()
+plt.show()
+```
+
+<p align="center">
+  <img width="1123" height="632" alt="image" src="https://github.com/user-attachments/assets/43d8daa0-c3d6-4c07-9822-659dd2702a79" />
+</p>
+
+
+## 3.3. Decade-by-Decade Heatmap Analysis
+
+To visualize the complete competitive evolution, I created a comprehensive heatmap showing market share intensity across all decades:
+
+```python
+df_country_analysis['Decade'] = df_country_analysis['Purchase_year'].apply(lambda x: f"{(x//10)*10}s")
+decade_analysis = df_country_analysis.groupby(['Decade', 'Country_of_origin']).size().unstack(fill_value=0)
+decade_percentages = decade_analysis.div(decade_analysis.sum(axis=1), axis=0) * 100
+
+plt.figure(figsize=(12, 8))
+heatmap_data = decade_percentages[top_countries].fillna(0)
+
+sns.heatmap(heatmap_data.T, annot=True, fmt='.1f', cmap='YlOrRd',
+cbar_kws={'label': 'Market Share (%)'})
+plt.title('Market Share Heatmap by Country and Decade', fontsize=16, fontweight='bold')
+plt.xlabel('Decade', fontsize=12)
+plt.ylabel('Country of Origin', fontsize=12)
+plt.tight_layout()
+plt.show()
+```
+
+
+<p align="center">
+  <img width="442" height="712" alt="image" src="https://github.com/user-attachments/assets/39e2f7d3-d9be-4995-a74d-d485cad79c65" />
+</p>
+
+
+<p align="center">
+  <img width="1022" height="707" alt="image" src="https://github.com/user-attachments/assets/4f3569f5-ac97-499c-88da-95300418936a" />
+</p>
+
+**Heat Intensity Analysis**:
+- **Dark Red Zone**: Japan's 1980s-1990s dominance era (50%+ market share)
+- **Warming Orange**: Germany's steady ascension across all decades
+- **Consistent Medium**: Australia and UK maintaining stable secondary positions
+- **Light Yellow**: Emerging markets with gradual growth patterns
+
+## 3.4. Key Insights & Trend Analysis
+
+I analyzed the specific disruption points and emerging trends that shaped the market:
+
+```python
+# Japan's dominance analysis
+japan_peak_share = market_share_pivot['japan'].max()
+japan_current_share = market_share_pivot['japan'].iloc[-1]
+
+# Market disruption points
+japan_changes = market_share_pivot['japan'].diff()
+biggest_drops = japan_changes.nsmallest(3)
+
+# Emerging market trends
+for country in ['germany', 'united kingdom']:
+early_share = market_share_pivot[country].iloc[:5].mean()
+late_share = market_share_pivot[country].iloc[-5:].mean()
+growth = late_share - early_share
+```
+
+## Key Strategic Insights
+
+### 1. The Complete Japanese Business Cycle
+Japan's trajectory represents a textbook business cycle from market disruption through dominance to competitive decline. The **31.9 percentage point drop** from peak demonstrates how even overwhelming market leadership can erode under sustained competitive pressure.
+
+### 2. European Automotive Renaissance  
+Germany and the UK represent the most successful long-term competitive repositioning, with Germany emerging as the primary challenger to Japanese dominance through sustained quality improvement and strategic market positioning.
+
+### 3. Market Maturation and Diversification
+The evolution from 1970s fragmentation through 1980s-1990s Japanese dominance to current competitive plurality reflects market maturation. Modern New Zealand consumers have access to genuine choice among established automotive powers.
+
+### 4. Geographic and Cultural Influence Patterns
+The sustained strength of geographically proximate (Japan, Australia) and culturally connected (UK) countries suggests that proximity and cultural familiarity remain important factors in automotive market penetration, even in an increasingly globalized economy.
+
+This temporal analysis provides the foundation for understanding how global automotive competition has evolved and positions New Zealand's automotive market within the broader context of changing international trade relationships and consumer preferences over more than five decades.
 
 
 
