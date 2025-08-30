@@ -188,7 +188,7 @@ This prevents charts from becoming cluttered and unreadable while still showing 
 **Gender Distribution**:
 
 <p align="center">
-  <img width="330" height="358" alt="image" src="https://github.com/user-attachments/assets/ecbefb42-c7c1-45ab-a3c4-6207eff9b1d1" />
+  <img width="706" height="714" alt="image" src="https://github.com/user-attachments/assets/c8125947-3fbf-4ea5-902f-6ddc55d9b9ff" />
 </p>
 
 The gender split is remarkably balanced - 50.9% male and 49.1% female car owners. This near-perfect 50/50 split suggests that car ownership in New Zealand isn't significantly skewed by gender, which is interesting for market segmentation purposes. Both men and women are equally represented in the car-buying market.
@@ -196,7 +196,7 @@ The gender split is remarkably balanced - 50.9% male and 49.1% female car owners
 **Car Status Analysis**:
 
 <p align="center">
-  <img width="274" height="316" alt="image" src="https://github.com/user-attachments/assets/dd8fcbf4-aaf3-48bb-ac93-9f98a6f87053" />
+  <img width="712" height="776" alt="image" src="https://github.com/user-attachments/assets/aaad3588-8f53-4285-8714-7804f522061f" />
 </p>
 
 This 70/30 split between old and new cars has major implications for automotive businesses - it shows the used car market is much larger than the new car market.
@@ -206,11 +206,12 @@ This 70/30 split between old and new cars has major implications for automotive 
 **Car Make Analysis**: 
 
 <p align="center">
-<img width="379" height="383" alt="image" src="https://github.com/user-attachments/assets/0b6f4ce0-7c66-419d-809d-87cbe5cf1882" />
+  <img width="1022" height="1016" alt="image" src="https://github.com/user-attachments/assets/b46f6b91-4695-44ad-8bf7-7241def573e6" />
 </p>
+
 This reveals a fascinating competitive landscape in New Zealand's automotive market. The top three brands are remarkably close: Ford leads with 9.87% market share, followed closely by Toyota (9.55%) and Mitsubishi (9.05%). This tight competition among the leaders suggests a healthy, competitive market without extreme dominance by any single brand.
 
-**What's Really Interesting**: The "Others" category accounts for 44.13% of the market, which means the car market is incredibly diverse - there are 245 different car makes in the dataset! This suggests New Zealanders have access to a wide variety of international brands, not just the major global players.
+**What's Really Interesting**: The "Others" category accounts for 44.13% of the market, which means the car market is incredibly diverse: there are 245 different car makes in the dataset! This suggests New Zealanders have access to a wide variety of international brands, not just the major global players.
 
 
 
