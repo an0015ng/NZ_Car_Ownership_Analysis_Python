@@ -404,6 +404,10 @@ late_share = market_share_pivot[country].iloc[-5:].mean()
 growth = late_share - early_share
 ```
 
+<p align="center">
+  <img width="573" height="361" alt="image" src="https://github.com/user-attachments/assets/8f907e53-1798-405c-9881-dd706143719a" />
+</p>
+
 ## Key Strategic Insights
 
 ### 1. The Complete Japanese Business Cycle
@@ -420,6 +424,33 @@ The sustained strength of geographically proximate (Japan, Australia) and cultur
 
 This temporal analysis provides the foundation for understanding how global automotive competition has evolved and positions New Zealand's automotive market within the broader context of changing international trade relationships and consumer preferences over more than five decades.
 
+## Skills Demonstrated
+
+This project showcases advanced proficiency in Python data analysis, statistical visualization, and temporal market research methodologies. The comprehensive automotive market analysis demonstrates both foundational and sophisticated techniques essential for data analyst roles in market research and business intelligence.
+
+### Python Data Analysis Skills Demonstrated
+
+- **Advanced Pandas Data Manipulation**: Implemented complex data cleaning, transformation, and aggregation workflows including `.groupby()` operations, multi-level indexing, and pivot table creation for temporal analysis across 53 years of market data.
+
+- **Time Series Analysis & Temporal Modeling**: Constructed sophisticated year-over-year market share calculations, trend identification algorithms, and decade-based comparative analysis using custom date parsing and temporal grouping functions.
+
+- **Statistical Analysis & Market Intelligence**: Deployed comprehensive statistical measures including standard deviation calculations for volatility analysis, percentage change tracking for disruption point identification, and comparative growth rate analysis across multiple market segments.
+
+- **Advanced Data Visualization Mastery**: Created multi-dimensional visualization strategies using Matplotlib and Seaborn, including time-series line charts, stacked area plots, and correlation heatmaps with custom color schemes and professional formatting.
+
+- **Market Research Methodology**: Designed comprehensive competitive analysis frameworks including market share evolution tracking, disruption point identification, and competitive tier classification systems for strategic business intelligence.
+
+### Business Intelligence & Analytical Thinking Skills
+
+- **Strategic Market Analysis Design**: Developed multi-phase analytical frameworks progressing from basic market overview through temporal dynamics to competitive intelligence, demonstrating structured analytical thinking and project planning capabilities.
+
+- **Competitive Intelligence Generation**: Transformed raw transactional data into actionable market insights, identifying key competitive trends, disruption events, and strategic positioning opportunities across global automotive markets.
+
+- **Cross-Temporal Pattern Recognition**: Applied sophisticated analytical techniques to identify long-term market cycles, competitive positioning changes, and emerging trend patterns across five decades of market evolution.
+
+## Project Files & Access
+
+All project files are readily accessible for technical review and hands-on exploration of the analytical methodologies demonstrated in this comprehensive automotive market analysis.
 
 
 
