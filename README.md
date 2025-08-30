@@ -213,7 +213,62 @@ This reveals a fascinating competitive landscape in New Zealand's automotive mar
 
 **What's Really Interesting**: The "Others" category accounts for 44.13% of the market, which means the car market is incredibly diverse: there are 245 different car makes in the dataset! This suggests New Zealanders have access to a wide variety of international brands, not just the major global players.
 
+**Car Model Deep Dive**:
 
+<p align="center">
+  <img width="1022" height="1016" alt="image" src="https://github.com/user-attachments/assets/b46f6b91-4695-44ad-8bf7-7241def573e6" />
+</p>
+
+The model analysis tells a different story entirely. With 44,918 unique car models in the dataset, no single model dominates. Even the most popular model (Range Rover) represents only 0.17% of all cars. This extreme fragmentation at the model level shows that while certain brands are popular, within those brands, consumer preferences are highly diversified.
+
+**The "Others" Phenomenon**: A massive 98.76% of cars fall into the "Others" category at the model level. This suggests that either:
+1. Car buyers in New Zealand highly value variety and individuality in their vehicle choices
+2. The market includes many older, discontinued models (remember 71% are "old" cars)
+3. There's a strong import market bringing in diverse models from different regions
+
+### Fuel Type & Environmental Trends
+
+**Vehicle Type Analysis**:
+
+<p align="center">
+  <img width="994" height="926" alt="image" src="https://github.com/user-attachments/assets/1b799d48-33c1-4654-82ca-a9bfe1a64b88" />
+</p>
+
+Here we see a clear story about New Zealand's automotive energy landscape. Petrol dominates with 70.59% of all vehicles, while diesel accounts for 29.30%. The tiny percentages for alternative fuels tell an important story:
+- **Electric**: Only 0.03% (102 cars out of 300,000)
+- **LPG**: 0.05% (145 cars)
+- **CNG**: 0.02% (58 cars)
+
+**Historical Context**: This data spanning 1970-2023 shows that electric vehicles are still in their infancy in New Zealand's overall vehicle fleet. While EVs might be growing in recent years, the historical data shows just how new this technology adoption is.
+
+### Vehicle Preferences & Lifestyle Patterns
+
+**Vehicle Shape Analysis**:
+
+<p align="center">
+  <img width="1058" height="1022" alt="image" src="https://github.com/user-attachments/assets/d047f0d9-2ee0-43a8-b7bf-0b6584863d35" />
+</p>
+
+The vehicle shape preferences reveal interesting insights about New Zealand lifestyles and practical needs:
+
+1. **Saloon cars dominate** at 29.99% - suggesting a preference for traditional family sedans
+2. **Station wagons (15.15%) and Hatchbacks (13.08%)** combined represent 28.23% - practical choices for families and urban living
+3. **Truck categories** (other truck 9.47% + flat-deck truck 2.74%) total 12.21% - reflecting New Zealand's agricultural and trade economy
+4. **Utility vehicles** at 6.82% plus **light vans** at 5.35% show the importance of work vehicles
+
+**Cultural Insights**: The high percentage of practical vehicle types (station wagons, utilities, trucks) aligns with New Zealand's outdoor culture, farming economy, and "do-it-yourself" mentality. Sports cars represent only 5.37%, suggesting practicality often trumps performance.
+
+### Global Market Dominance & Trade Patterns
+
+**Country of Origin Analysis**:
+
+<p align="center">
+  <img width="1052" height="1030" alt="image" src="https://github.com/user-attachments/assets/b9e7e6f6-f238-4b56-a495-145986f19d79" />
+</p>
+
+This is where the analysis gets really interesting from a global trade perspective. **Japan absolutely dominates** New Zealand's car market with 48.09% market share: nearly half of all cars! This is a stunning level of market dominance that tells the story of New Zealand's automotive relationship with Asia-Pacific.
+
+New Zealand's own automotive production accounts for only 3.33% of the market, suggesting the country relies heavily on imports rather than domestic manufacturing.
 
 
 
