@@ -188,7 +188,7 @@ This prevents charts from becoming cluttered and unreadable while still showing 
 **Gender Distribution**:
 
 <p align="center">
-  <img width="706" height="714" alt="image" src="https://github.com/user-attachments/assets/c8125947-3fbf-4ea5-902f-6ddc55d9b9ff" />
+  <img width="471" height="476" alt="image" src="https://github.com/user-attachments/assets/c8125947-3fbf-4ea5-902f-6ddc55d9b9ff" />
 </p>
 
 The gender split is remarkably balanced - 50.9% male and 49.1% female car owners. This near-perfect 50/50 split suggests that car ownership in New Zealand isn't significantly skewed by gender, which is interesting for market segmentation purposes. Both men and women are equally represented in the car-buying market.
@@ -196,7 +196,7 @@ The gender split is remarkably balanced - 50.9% male and 49.1% female car owners
 **Car Status Analysis**:
 
 <p align="center">
-  <img width="712" height="776" alt="image" src="https://github.com/user-attachments/assets/aaad3588-8f53-4285-8714-7804f522061f" />
+  <img width="471" height="517" alt="image" src="https://github.com/user-attachments/assets/aaad3588-8f53-4285-8714-7804f522061f" />
 </p>
 
 This 70/30 split between old and new cars has major implications for automotive businesses - it shows the used car market is much larger than the new car market.
@@ -206,7 +206,7 @@ This 70/30 split between old and new cars has major implications for automotive 
 **Car Make Analysis**: 
 
 <p align="center">
-  <img width="1022" height="1016" alt="image" src="https://github.com/user-attachments/assets/b46f6b91-4695-44ad-8bf7-7241def573e6" />
+  <img width="715" height="711" alt="image" src="https://github.com/user-attachments/assets/b46f6b91-4695-44ad-8bf7-7241def573e6" />
 </p>
 
 This reveals a fascinating competitive landscape in New Zealand's automotive market. The top three brands are remarkably close: Ford leads with 9.87% market share, followed closely by Toyota (9.55%) and Mitsubishi (9.05%). This tight competition among the leaders suggests a healthy, competitive market without extreme dominance by any single brand.
@@ -216,7 +216,7 @@ This reveals a fascinating competitive landscape in New Zealand's automotive mar
 **Car Model Deep Dive**:
 
 <p align="center">
-  <img width="1022" height="1016" alt="image" src="https://github.com/user-attachments/assets/b46f6b91-4695-44ad-8bf7-7241def573e6" />
+  <img width="715" height="711" alt="image" src="https://github.com/user-attachments/assets/b46f6b91-4695-44ad-8bf7-7241def573e6" />
 </p>
 
 The model analysis tells a different story entirely. With 44,918 unique car models in the dataset, no single model dominates. Even the most popular model (Range Rover) represents only 0.17% of all cars. This extreme fragmentation at the model level shows that while certain brands are popular, within those brands, consumer preferences are highly diversified.
@@ -231,7 +231,7 @@ The model analysis tells a different story entirely. With 44,918 unique car mode
 **Vehicle Type Analysis**:
 
 <p align="center">
-  <img width="994" height="926" alt="image" src="https://github.com/user-attachments/assets/1b799d48-33c1-4654-82ca-a9bfe1a64b88" />
+  <img width="696" height="648" alt="image" src="https://github.com/user-attachments/assets/1b799d48-33c1-4654-82ca-a9bfe1a64b88" />
 </p>
 
 Here we see a clear story about New Zealand's automotive energy landscape. Petrol dominates with 70.59% of all vehicles, while diesel accounts for 29.30%. The tiny percentages for alternative fuels tell an important story:
@@ -246,7 +246,7 @@ Here we see a clear story about New Zealand's automotive energy landscape. Petro
 **Vehicle Shape Analysis**:
 
 <p align="center">
-  <img width="1058" height="1022" alt="image" src="https://github.com/user-attachments/assets/d047f0d9-2ee0-43a8-b7bf-0b6584863d35" />
+  <img width="740" height="715" alt="image" src="https://github.com/user-attachments/assets/d047f0d9-2ee0-43a8-b7bf-0b6584863d35" />
 </p>
 
 The vehicle shape preferences reveal interesting insights about New Zealand lifestyles and practical needs:
@@ -263,7 +263,7 @@ The vehicle shape preferences reveal interesting insights about New Zealand life
 **Country of Origin Analysis**:
 
 <p align="center">
-  <img width="1052" height="1030" alt="image" src="https://github.com/user-attachments/assets/b9e7e6f6-f238-4b56-a495-145986f19d79" />
+  <img width="736" height="721" alt="image" src="https://github.com/user-attachments/assets/b9e7e6f6-f238-4b56-a495-145986f19d79" />
 </p>
 
 This is where the analysis gets really interesting from a global trade perspective. **Japan absolutely dominates** New Zealand's car market with 48.09% market share: nearly half of all cars! This is a stunning level of market dominance that tells the story of New Zealand's automotive relationship with Asia-Pacific.
@@ -290,7 +290,7 @@ print(market_share_pivot.loc[available_years].round(1))
 ```
 
 <p align="center">
-  <img width="1072" height="822" alt="image" src="https://github.com/user-attachments/assets/f37d8e26-533a-4b35-ad09-6168d2d6944f" />
+  <img width="536" height="411" alt="image" src="https://github.com/user-attachments/assets/f37d8e26-533a-4b35-ad09-6168d2d6944f" />
 </p>
 
 The pivot table revealed Japan's complete market cycle: from 3.2% (1970s) to peak dominance of 69.3% (1990s), then gradual decline to 38.5% (2023). Meanwhile, Germany showed consistent growth from 6.0% to 16.2%, establishing itself as the primary challenger.
@@ -375,7 +375,7 @@ plt.show()
 
 
 <p align="center">
-  <img width="1022" height="707" alt="image" src="https://github.com/user-attachments/assets/4f3569f5-ac97-499c-88da-95300418936a" />
+  <img width="818" height="566" alt="image" src="https://github.com/user-attachments/assets/4f3569f5-ac97-499c-88da-95300418936a" />
 </p>
 
 **Heat Intensity Analysis**:
