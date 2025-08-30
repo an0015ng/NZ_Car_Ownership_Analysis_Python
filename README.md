@@ -56,7 +56,7 @@ I begin with comprehensive data quality assessment to ensure reliable analysis, 
 I started by checking if there were any missing values across all columns in the dataset. This is essential because missing data can indicate data collection issues or require special handling strategies.
 
 ```python
-#Check for missing values & percentages
+# Check for missing values & percentages
 missing_count = df.isnull().sum()
 print("\nMissing Values Percentage:")
 
@@ -83,11 +83,11 @@ The results showed 0.0% missing values across all 16 columns. With 300,000 recor
 I needed to convert the data types to make the analysis more efficient and accurate:
 
 ```python
-#Convert date columns to proper datetime format
+# Convert date columns to proper datetime format
 if 'Purchase_date' in df_clean.columns:
 df_clean['Purchase_date'] = pd.to_datetime(df_clean['Purchase_date'], errors='coerce')
 
-#Ensure categorical variables are properly typed
+# Ensure categorical variables are properly typed
 categorical_columns = ['Gender', 'Car_status', 'Car_Make', 'Car_Model',
 'Vehicle_type', 'Vehicle_shape', 'Country_of_origin']
 
@@ -105,16 +105,16 @@ Converting dates to datetime format allows for proper time-series analysis later
 The original dataset had birth years and purchase years, but what I really needed was current age and how long people have owned their cars:
 
 ```python
-#Calculate age from birth year (current year is 2025)
+# Calculate age from birth year (current year is 2025)
 current_year = 2025
 if 'Year_of_birth' in df_clean.columns:
 df_clean['Age'] = current_year - df_clean['Year_of_birth']
 
-#Calculate years since purchase
+# Calculate years since purchase
 if 'Purchase_year' in df_clean.columns:
 df_clean['Years_since_purchase'] = current_year - df_clean['Purchase_year']
 
-#Remove duplicates
+# Remove duplicates
 print(f"Duplicates found: {df_clean.duplicated().sum()}")
 df_clean.drop_duplicates(inplace=True)
 print(f"Dataset shape after removing duplicates: {df_clean.shape}")
