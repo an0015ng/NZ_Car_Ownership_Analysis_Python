@@ -452,13 +452,28 @@ This project showcases advanced proficiency in Python data analysis, statistical
 
 All project files are readily accessible for technical review and hands-on exploration of the analytical methodologies demonstrated in this comprehensive automotive market analysis.
 
+## Project Files & Access
 
+All project files are readily accessible for technical review and hands-on exploration of the analytical methodologies demonstrated in this comprehensive automotive market analysis.
 
+### Core Project Files
 
+**Raw Dataset**
+- [Car_Data.csv](https://github.com/an0015ng/NZ_Car_Ownership_Analysis_Python/blob/main/Car_Data.csv) - Complete vehicle registration dataset with 300,000+ records spanning 1970-2023, including make, model, country of origin, and temporal purchase data
 
+**Python Analysis Notebook**
+- [NZ Car Ownership Analysis.ipynb](https://github.com/an0015ng/NZ_Car_Ownership_Analysis_Python/blob/main/NZ%20Car%20Ownership%20Analysis.ipynb) - Complete Jupyter notebook containing all three phases: data cleaning and quality assessment, foundational market analysis, and advanced temporal competitive intelligence with comprehensive visualizations
 
+### How to Use These Files
 
+1. **Download the raw dataset** to practice comprehensive data quality assessment and temporal analysis techniques
+2. **Execute the Python notebook** to understand the complete analytical workflow from data preparation through competitive intelligence generation  
+3. **Review the analysis methodology** to understand the integration of statistical analysis with business intelligence applications
 
+All files demonstrate end-to-end analytical capability from raw data ingestion through executive-ready market intelligence, suitable for showcasing advanced Python data analysis proficiency in data analyst portfolios.
 
+## Conclusion
 
+This project serves as a comprehensive demonstration of advanced Python data analysis capabilities applied to real-world market research challenges. The systematic progression from data quality assessment through temporal competitive analysis showcases mastery of essential data science techniques including sophisticated Pandas operations, statistical analysis methods, and professional visualization creation using Matplotlib and Seaborn. Through rigorous analysis of 300,000+ vehicle records spanning 53 years, the project reveals complex market dynamics including Japan's complete business cycle, European automotive renaissance patterns, and quantified market disruption events with statistical validation.
 
+Beyond technical proficiency, this analysis illustrates critical business research capabilities essential for senior data analyst roles. The integration of statistical rigor with business context - evidenced through market volatility analysis, competitive tier classification, and trend quantification - positions this work as a complete demonstration of modern data analysis capabilities required for data-driven business intelligence roles in competitive market environments.
