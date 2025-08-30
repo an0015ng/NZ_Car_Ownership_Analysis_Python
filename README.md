@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-This project analyzes **300,000 New Zealand car ownership records from 1970-2023** to showcase my data analysis skills using Python and pandas. I worked through the complete data analysis process, starting from cleaning messy data to uncovering interesting patterns about car ownership, demographics, and how different countries have dominated the car market over five decades. This analysis demonstrates my ability to handle large datasets and extract meaningful business insights that car dealerships, manufacturers, and automotive businesses can actually use.
+This project conducts a comprehensive analysis of New Zealand's automotive market using **300,000+ vehicle records spanning 53 years (1970-2023)** to reveal temporal market dynamics and competitive intelligence through advanced Python data analysis techniques including sophisticated Pandas operations, statistical modeling, and professional visualization with Matplotlib and Seaborn. Key findings demonstrate **Japan's complete business cycle from 3.2% market share in the 1970s to 70.4% peak dominance in 1989, followed by decline to 38.5% in 2023**, while identifying Germany's consistent emergence as the primary challenger and quantifying specific market disruption points with statistical validation. The analysis transforms raw transactional data into actionable market intelligence, showcasing end-to-end analytical capabilities essential for data analyst roles in competitive market research and strategic business intelligence.
 
 ## Table of Contents
 
@@ -447,10 +447,6 @@ This project showcases advanced proficiency in Python data analysis, statistical
 - **Competitive Intelligence Generation**: Transformed raw transactional data into actionable market insights, identifying key competitive trends, disruption events, and strategic positioning opportunities across global automotive markets.
 
 - **Cross-Temporal Pattern Recognition**: Applied sophisticated analytical techniques to identify long-term market cycles, competitive positioning changes, and emerging trend patterns across five decades of market evolution.
-
-## Project Files & Access
-
-All project files are readily accessible for technical review and hands-on exploration of the analytical methodologies demonstrated in this comprehensive automotive market analysis.
 
 ## Project Files & Access
 
